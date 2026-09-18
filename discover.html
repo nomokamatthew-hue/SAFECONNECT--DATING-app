@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeConnect - Discover</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .app {
+      max-width: 430px;
+      min-height: 100vh;
+      margin: auto;
+      background: white;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .location {
+      text-align: center;
+      padding: 15px;
+      background: #f1f1f1;
+      font-size: 14px;
+    }
+
+    .card {
+      margin: 20px;
+      border: 1px solid #ddd;
+      border-radius: 18px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .photo {
+      height: 300px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+    }
+
+    .info {
+      padding: 18px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .verified {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .bio {
+      margin-top: 12px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: #eee;
+      padding: 7px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .distance {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      padding: 0 18px 18px;
+    }
+
+    button {
+      flex: 1;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .pass {
+      background: #eee;
+    }
+
+    .like {
+      background: #111;
+      color: white;
+    }
+
+    .safety-note {
+      margin: 20px;
+      padding: 15px;
+      background: #f1f1f1;
+      border-radius: 12px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+    <h1>SafeConnect</h1>
+    <p>Discover people</p>
+  </header>
+
+  <div class="location">
+    📍 People within your selected distance
+  </div>
+
+  <div class="card">
+
+    <div class="photo">
+      👤
+    </div>
+
+    <div class="info">
+
+      <div class="name">
+        Alex, 29
+      </div>
+
+      <div class="verified">
+        🛡️ Identity Verified
+      </div>
+
+      <div class="bio">
+        Love music, travelling and good conversations.
+        Looking to meet someone genuine.
+      </div>
+
+      <div class="tags">
+        <span class="tag">🎵 Music</span>
+        <span class="tag">✈️ Travel</span>
+        <span class="tag">🍳 Cooking</span>
+        <span class="tag">🏋️ Fitness</span>
+      </div>
+
+      <div class="distance">
+        📍 8 km away
+      </div>
+
+    </div>
+
+    <div class="actions">
+      <button class="pass">Pass</button>
+      <button class="like">❤️ Like</button>
+    </div>
+
+  </div>
+
+  <div class="safety-note">
+    🛡️ <strong>Stay safe</strong><br><br>
+    Never send money to someone you have met online.
+    When meeting someone for the first time, use the
+    SafeConnect safety check-in feature.
+  </div>
+
+</div>
+
+</body>
+    </html>
