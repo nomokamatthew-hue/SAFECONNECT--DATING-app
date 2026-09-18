@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeConnect Profile</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .container {
+      max-width: 430px;
+      min-height: 100vh;
+      margin: auto;
+      background: white;
+      padding: 25px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px;
+      overflow: hidden;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin-top: 7px;
+      border: 1px solid #ccc;
+      border-radius: 9px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .interest {
+      padding: 9px 12px;
+      background: #eee;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .interest input {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .verified {
+      text-align: center;
+      background: #eee;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 25px;
+      background: #111;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Create Your Profile</h1>
+
+  <p class="subtitle">
+    Tell people a little about yourself.
+  </p>
+
+  <div class="verified">
+    🛡️ Identity verification required
+  </div>
+
+  <div class="photo">
+    📷
+  </div>
+
+  <label>Profile photo</label>
+  <input type="file" accept="image/*">
+
+  <label>Display name</label>
+  <input type="text" placeholder="What should people call you?">
+
+  <label>About me</label>
+  <textarea placeholder="Tell people about yourself..."></textarea>
+
+  <label>My interests</label>
+
+  <div class="interests">
+
+    <label class="interest">
+      <input type="checkbox"> Music
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Sports
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Travel
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Cooking
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Fitness
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Gaming
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Movies
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Art
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Nature
+    </label>
+
+    <label class="interest">
+      <input type="checkbox"> Reading
+    </label>
+
+  </div>
+
+  <label>What are you looking for?</label>
+
+  <select>
+    <option value="">Select an option</option>
+    <option>Relationship</option>
+    <option>Dating</option>
+    <option>Friendship</option>
+    <option>Something casual</option>
+    <option>I'm still figuring it out</option>
+  </select>
+
+  <label>Distance</label>
+
+  <select>
+    <option>Within 5 km</option>
+    <option>Within 10 km</option>
+    <option>Within 25 km</option>
+    <option>Within 50 km</option>
+    <option>Anywhere</option>
+  </select>
+
+  <button>
+    Save My Profile
+  </button>
+
+</div>
+
+</body>
+        </html>
