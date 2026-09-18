@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeConnect - Match</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .app {
+      max-width: 430px;
+      min-height: 100vh;
+      margin: auto;
+      background: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .heart {
+      font-size: 75px;
+      margin: 30px 0 10px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .profiles {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .profile {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #111;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .secondary {
+      background: white;
+      color: #111;
+      border: 1px solid #111;
+    }
+
+    .safety {
+      margin-top: 30px;
+      padding: 18px;
+      background: #f1f1f1;
+      border-radius: 12px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="heart">❤️</div>
+
+  <h1>It's a Match!</h1>
+
+  <p class="subtitle">
+    You and Alex have both liked each other.
+    You can now start a conversation.
+  </p>
+
+  <div class="profiles">
+    <div class="profile">👤</div>
+    <div class="profile">👤</div>
+  </div>
+
+  <button onclick="openChat()">
+    💬 Start Chat
+  </button>
+
+  <button class="secondary">
+    Keep Discovering
+  </button>
+
+  <div class="safety">
+    🛡️ <strong>Before meeting in person</strong><br><br>
+    Take your time getting to know each other.
+    Never send money to someone you met online.
+    When you decide to meet, use the SafeConnect
+    <strong>“I'm Meeting Someone”</strong> safety feature.
+  </div>
+
+</div>
+
+<script>
+  function openChat() {
+    window.location.href = "chat.html";
+  }
+</script>
+
+</body>
+</html>
